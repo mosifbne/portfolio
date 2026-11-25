@@ -7,10 +7,9 @@ compatibility_date = "2025-11-01"
 [build]
 command = "node scripts/build.mjs"
 
-# Leaderboard database. Create a D1 database named "portfolio-leaderboard"
-# in the Cloudflare dashboard, then paste its ID below.
+# Leaderboard database (Cloudflare D1).
 [[d1_databases]]
 binding = "DB"
 database_name = "portfolio-leaderboard"
-database_id = "PASTE-D1-DATABASE-ID-HERE"
+database_id = "80014f91-7597-45b6-9542-8a65bdac255a"
 migrations_dir = "drizzle"
