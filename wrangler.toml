@@ -1,6 +1,6 @@
 # Cloudflare Workers config. Cloudflare's GitHub integration (Workers Builds)
 # reads this file on every push to main and deploys automatically.
-name = "mohamed-yousif-portfolio"
+name = "portfolio"
 main = "dist/server/index.js"
 compatibility_date = "2025-11-01"
 
