@@ -4,10 +4,16 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     if (url.pathname === "/api/runner") {
+      if (!env.DB) {
+        console.error("Leaderboard: no D1 binding named DB on this Worker.");
+        return json({ error: "Leaderboard temporarily unavailable.", code: "no_database_binding" }, 503);
+      }
       try {
         return await leaderboard(request, url, env.DB);
-      } catch {
-        return json({ error: "Leaderboard temporarily unavailable." }, 503);
+      } catch (error) {
+        console.error("Leaderboard query failed:", error);
+        const code = /no such table/i.test(String(error?.message)) ? "missing_table" : "query_failed";
+        return json({ error: "Leaderboard temporarily unavailable.", code }, 503);
       }
     }
     const asset = assets[url.pathname];
