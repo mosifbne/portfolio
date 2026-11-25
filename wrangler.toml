@@ -1,0 +1,16 @@
+# Cloudflare Workers config. Cloudflare's GitHub integration (Workers Builds)
+# reads this file on every push to main and deploys automatically.
+name = "mohamed-yousif-portfolio"
+main = "dist/server/index.js"
+compatibility_date = "2025-11-01"
+
+[build]
+command = "node scripts/build.mjs"
+
+# Leaderboard database. Create a D1 database named "portfolio-leaderboard"
+# in the Cloudflare dashboard, then paste its ID below.
+[[d1_databases]]
+binding = "DB"
+database_name = "portfolio-leaderboard"
+database_id = "PASTE-D1-DATABASE-ID-HERE"
+migrations_dir = "drizzle"
