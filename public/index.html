@@ -10,6 +10,40 @@
 <script src="runner.js" defer></script>
 </head>
 <body>
+<svg class="sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/></symbol>
+<symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20l4-1L19 8l-3-3L5 16z"/><path d="M14 7l3 3"/></symbol>
+<symbol id="i-code" viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6"/><circle cx="17" cy="9" r="2.4"/><path d="M16.5 14.2c2.6.3 4.5 2.5 4.5 5.3"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 20h18M6 20v-7M11 20V5M16 20v-10M21 20v-4"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.8 5.4L19 10l-5.2 1.6L12 17l-1.8-5.4L5 10l5.2-1.6z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></symbol>
+<symbol id="i-browser" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><circle cx="6" cy="6.5" r=".6"/><circle cx="8.5" cy="6.5" r=".6"/></symbol>
+<symbol id="i-chip" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="1.5"/><rect x="10" y="10" width="4" height="4"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14.5 17.5l2 2 4-4.5"/></symbol>
+<symbol id="i-library" viewBox="0 0 24 24"><rect x="3" y="4" width="4" height="16" rx="1"/><rect x="8.5" y="4" width="4" height="16" rx="1"/><path d="M14.5 6.2l3.8-1 3.6 13.6-3.8 1z"/></symbol>
+<symbol id="i-store" viewBox="0 0 24 24"><path d="M4 9l1.2-5h13.6L20 9M4 9v11h16V9M4 9h16M9.5 20v-6h5v6"/></symbol>
+<symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></symbol>
+<symbol id="i-queue" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="4" rx="1.5"/><rect x="3" y="10" width="18" height="4" rx="1.5"/><rect x="3" y="16" width="12" height="4" rx="1.5"/><path d="M18 16.5a2.5 2.5 0 1 1-.6 3"/></symbol>
+<symbol id="i-box" viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5l8 4.5 8-4.5M12 12v9"/></symbol>
+<symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 6h12v10H2zM14 10h4l3 3v3h-7"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+<symbol id="i-qr" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v1M14 20h1M18 18h3v3"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><rect x="6.5" y="2" width="11" height="20" rx="2.2"/><path d="M10.5 18.5h3"/></symbol>
+<symbol id="i-media" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z"/></symbol>
+<symbol id="i-wave" viewBox="0 0 24 24"><path d="M2 12h3l2-6 3 12 3-9 2 6 2-3h5"/></symbol>
+<symbol id="i-sliders" viewBox="0 0 24 24"><path d="M6 3v18M12 3v18M18 3v18"/><rect x="4" y="13" width="4" height="3" rx=".8"/><rect x="10" y="6" width="4" height="3" rx=".8"/><rect x="16" y="15" width="4" height="3" rx=".8"/></symbol>
+<symbol id="i-speaker" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="14.5" r="4"/><circle cx="12" cy="6.5" r="1.5"/></symbol>
+<symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M8.5 11l2 2 4-4M8.5 17h7"/></symbol>
+<symbol id="i-headset" viewBox="0 0 24 24"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="6" rx="1"/><rect x="17" y="14" width="4" height="6" rx="1"/></symbol>
+<symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3.5 2.5 8.5 2.5 12 0v-5M22 9v6"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6l8.5 7 8.5-7"/></symbol>
+<symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="10" r="2"/><path d="M5.5 16c.5-2 1.6-3 3-3s2.5 1 3 3M14 9h4M14 13h4"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+</defs>
+</svg>
 <a class="skip" href="#desktop">Skip to portfolio</a>
 <header class="topbar">
 <a class="brand" href="#about" data-open="about"><span class="mark" aria-hidden="true"></span> Mohamed Yousif</a>
@@ -28,59 +62,159 @@
 <a href="#runner" data-open="runner"><span class="icon arcade" aria-hidden="true"></span>Paper Route</a>
 </nav>
 <div class="workspace">
+
 <section id="about" class="panel intro" aria-labelledby="about-title">
 <header class="titlebar"><span id="about-title">About me</span><button type="button" data-close aria-label="Close About me" hidden>×</button></header>
 <div class="sheet">
 <h1>Mohamed Yousif</h1>
 <p class="headline">Technology Consultant · Solutions Developer · Brisbane</p>
-<p class="lead">I build technology for creative and entertainment businesses. Most recently I designed and delivered a private AI image studio for Village Roadshow Theme Parks’ Fright Nights, taking it from idea to daily use within weeks. Before that I spent ten years producing live shows for touring artists on Universal Music Group and Sony Music rosters.</p>
-<p class="lead">I start from the client’s business problem, design the solution, and get a working version in front of people quickly with Python, JavaScript and AI coding agents. A minor in Business Intelligence means I also measure whether it worked.</p>
+<p class="lead">I build technology for creative and entertainment businesses, from a private AI image studio for Village Roadshow Theme Parks’ Fright Nights to ten years of live show systems for artists on Universal Music Group and Sony Music rosters.</p>
+
+<ul class="stats">
+<li class="t-rose"><b>10 yrs</b><span>building live show systems for touring artists</span></li>
+<li class="t-ochre"><b>Weeks</b><span>from idea to daily use on Fright Nights</span></li>
+<li class="t-sky"><b>100s</b><span>of images within days of rollout</span></li>
+<li class="t-sage"><b>2 mo</b><span>early on an eight-month capstone</span></li>
+</ul>
+
+<h3 class="kicker">How I work</h3>
+<ol class="flow">
+<li><svg><use href="#i-target"/></svg><span>Start from the business problem</span></li>
+<li><svg><use href="#i-pen"/></svg><span>Design the solution</span></li>
+<li><svg><use href="#i-code"/></svg><span>Build fast with AI agents</span></li>
+<li><svg><use href="#i-users"/></svg><span>Put it in front of people</span></li>
+<li><svg><use href="#i-chart"/></svg><span>Measure that it worked</span></li>
+</ol>
+
 <div class="actions"><a href="#work" data-open="work">View selected work</a><a href="#contact" data-open="contact">Get in touch</a></div>
 </div>
 </section>
+
 <section id="experience" class="panel" aria-labelledby="experience-title">
 <header class="titlebar"><span id="experience-title">Previous experience</span><button type="button" data-close aria-label="Close Previous experience" hidden>×</button></header>
 <div class="sheet">
 <h2>Previous experience</h2>
-<article><p class="meta">Sep 2026 – Present · Brisbane</p><h3>Product Owner</h3><p class="organisation">Taste · Client: Village Roadshow Theme Parks (Fright Nights)</p><p>Product owner and solution designer for a private AI image studio. I worked with the creative director to turn their art direction into requirements, quality standards and release gates, designed the UX and back end of the batch-review and library tools, and set data and cost rules from day one. Idea to daily use within weeks, with hundreds of images produced within days of rollout.</p></article>
-<article><p class="meta">Jan 2024 – Present · Brisbane</p><h3>Business / Data Analyst</h3><p class="organisation">Tribe Agency</p><p>Analyse time-sheet data in Python to find under-utilised time and processes that don’t produce billable outcomes, and build the Power BI dashboards department heads use to track utilisation and billable hours.</p></article>
-<article><p class="meta">Mar 2024 – Nov 2024 · Brisbane</p><h3>Project Lead, QUT Capstone</h3><p class="organisation">Wicked Interactive Storytelling (client)</p><p>Led the team building a browser-based WebAR experience for a tour of QUT’s Old Government House. Delivered a working demo two months ahead of an eight-month plan, then used the time to add audio, video and photos. High Distinction and client praise.</p></article>
-<article><p class="meta">Jan 2023 – Jul 2023 · Brisbane</p><h3>Technical Support Specialist</h3><p class="organisation">Bigmate</p><p>Managed telematics devices remotely through the Linux terminal (activation, monitoring and configuration deployments) and diagnosed connectivity and performance faults for clients.</p></article>
-<article><p class="meta">2011 – 2021 · Freelance</p><h3>Live Show Producer</h3><p class="organisation">Touring artists on Universal Music Group and Sony Music rosters</p><p>Built and ran live show systems in Ableton Live for touring acts, including Carmouflage Rose (Sony Music Australia), from 100-capacity venues to festivals such as Listen Out, Spilt Milk and FOMO. Reusable show templates, equipment riders and on-the-day problem solving with venue crews; no show ever stopped because of the system.</p></article>
+
+<figure class="timeline" aria-label="Career timeline, 2011 to 2026">
+<div class="tl-row"><span class="tl-label">Live shows</span><span class="tl-bar t-rose" style="grid-column: 2 / 13" title="Live Show Producer, 2011–2021"></span></div>
+<div class="tl-row"><span class="tl-label">QUT degree</span><span class="tl-bar t-sage study" style="grid-column: 11 / 16" title="QUT, 2020–2024"></span></div>
+<div class="tl-row"><span class="tl-label">Bigmate</span><span class="tl-bar t-sky" style="grid-column: 14 / 15" title="Bigmate, 2023"></span></div>
+<div class="tl-row"><span class="tl-label">Tribe Agency</span><span class="tl-bar t-blue now" style="grid-column: 15 / 18" title="Tribe Agency, 2024–now"></span></div>
+<div class="tl-row"><span class="tl-label">Taste</span><span class="tl-bar t-ochre now" style="grid-column: 17 / 18" title="Taste, 2026–now"></span></div>
+<div class="tl-axis" aria-hidden="true"><span style="grid-column: 2">2011</span><span class="minor" style="grid-column: 6">2015</span><span style="grid-column: 10">2019</span><span class="minor" style="grid-column: 14">2023</span><span class="end" style="grid-column: 17">now</span></div>
+</figure>
+
+<article class="role"><span class="badge-icon t-ochre"><svg><use href="#i-clipboard"/></svg></span><div>
+<p class="meta">Sep 2026 – Present · Brisbane</p><h3>Product Owner</h3><p class="organisation">Taste · Client: Village Roadshow Theme Parks (Fright Nights)</p>
+<p>Product owner and solution designer for a private AI image studio. Requirements, quality gates and release rules with the creative director; UX and back end of the batch reviewer and library.</p>
+<ul class="chips"><li>Product ownership</li><li>UX</li><li>Generative AI</li><li>Cloud GPUs</li></ul></div></article>
+
+<article class="role"><span class="badge-icon t-blue"><svg><use href="#i-chart"/></svg></span><div>
+<p class="meta">Jan 2024 – Present · Brisbane</p><h3>Business / Data Analyst</h3><p class="organisation">Tribe Agency</p>
+<p>Python analysis of time-sheet data and the Power BI dashboards department heads use to track utilisation and billable hours.</p>
+<ul class="chips"><li>Python</li><li>Power BI</li><li>Process analysis</li></ul></div></article>
+
+<article class="role"><span class="badge-icon t-sage"><svg><use href="#i-qr"/></svg></span><div>
+<p class="meta">Mar 2024 – Nov 2024 · Brisbane</p><h3>Project Lead, QUT Capstone</h3><p class="organisation">Wicked Interactive Storytelling (client)</p>
+<p>Led the team building a WebAR tour of QUT’s Old Government House. Demo delivered two months early; High Distinction.</p>
+<ul class="chips"><li>WebAR</li><li>Design Thinking</li><li>Team lead</li></ul></div></article>
+
+<article class="role"><span class="badge-icon t-sky"><svg><use href="#i-headset"/></svg></span><div>
+<p class="meta">Jan 2023 – Jul 2023 · Brisbane</p><h3>Technical Support Specialist</h3><p class="organisation">Bigmate</p>
+<p>Remote management and fault diagnosis of telematics devices through the Linux terminal.</p>
+<ul class="chips"><li>Linux</li><li>Telematics</li><li>Diagnostics</li></ul></div></article>
+
+<article class="role"><span class="badge-icon t-rose"><svg><use href="#i-wave"/></svg></span><div>
+<p class="meta">2011 – 2021 · Freelance</p><h3>Live Show Producer</h3><p class="organisation">Touring artists on Universal Music Group and Sony Music rosters</p>
+<p>Ableton Live show systems for touring acts including Carmouflage Rose (Sony Music Australia), from 100-capacity rooms to Listen Out, Spilt Milk and FOMO.</p>
+<ul class="chips"><li>Ableton Live</li><li>Audio engineering</li><li>Touring</li></ul></div></article>
 </div>
 </section>
+
 <section id="skills" class="panel" aria-labelledby="skills-title">
 <header class="titlebar"><span id="skills-title">Skills &amp; education</span><button type="button" data-close aria-label="Close Skills and education" hidden>×</button></header>
 <div class="sheet">
 <h2>Skills &amp; education</h2>
-<h3>Solutions and AI</h3>
-<ul class="skills"><li>Solution architecture</li><li>Web applications</li><li>API integration</li><li>Generative AI</li><li>Retrieval-augmented generation (RAG)</li><li>AI agents</li><li>Prompt engineering</li><li>Model evaluation</li><li>Human-in-the-loop design</li></ul>
-<h3>Languages and tools</h3>
-<ul class="skills"><li>Python</li><li>TypeScript</li><li>JavaScript</li><li>HTML/CSS</li><li>Claude Code</li><li>Cursor</li><li>Git &amp; GitHub</li><li>Linux</li><li>Modal (cloud GPUs)</li><li>Power BI</li><li>Ableton Live</li></ul>
-<h3>Product and delivery</h3>
-<ul class="skills"><li>Product ownership</li><li>Requirements &amp; acceptance criteria</li><li>User acceptance testing</li><li>Agile / Scrum</li><li>Stakeholder management</li><li>Technical documentation</li><li>Data governance</li></ul>
-<article><h3>Queensland University of Technology (QUT)</h3><p>Information Technology, Minor in Business Intelligence · 2020 – 2024</p></article>
-<article><h3>Languages</h3><p>English · Arabic (native or bilingual)</p></article>
+<div class="cards">
+<div class="card"><h3><span class="badge-icon t-ochre"><svg><use href="#i-spark"/></svg></span>Solutions &amp; AI</h3>
+<ul class="chips"><li>Solution architecture</li><li>Web applications</li><li>API integration</li><li>Generative AI</li><li>RAG</li><li>AI agents</li><li>Prompt engineering</li><li>Model evaluation</li><li>Human-in-the-loop</li></ul></div>
+<div class="card"><h3><span class="badge-icon t-sky"><svg><use href="#i-code"/></svg></span>Languages &amp; tools</h3>
+<ul class="chips"><li>Python</li><li>TypeScript</li><li>JavaScript</li><li>HTML/CSS</li><li>Claude Code</li><li>Cursor</li><li>Git &amp; GitHub</li><li>Linux</li><li>Modal</li><li>Power BI</li><li>Ableton Live</li></ul></div>
+<div class="card"><h3><span class="badge-icon t-sage"><svg><use href="#i-clipboard"/></svg></span>Product &amp; delivery</h3>
+<ul class="chips"><li>Product ownership</li><li>Requirements</li><li>UAT</li><li>Agile / Scrum</li><li>Stakeholders</li><li>Documentation</li><li>Data governance</li></ul></div>
+</div>
+<div class="cards two">
+<div class="card flat"><span class="badge-icon big t-blue"><svg><use href="#i-cap"/></svg></span><div><h3>QUT</h3><p>Information Technology, Minor in Business Intelligence · 2020 – 2024</p></div></div>
+<div class="card flat"><span class="badge-icon big t-rose"><svg><use href="#i-globe"/></svg></span><div><h3>Languages</h3><p>English · Arabic (native or bilingual)</p></div></div>
+</div>
 </div>
 </section>
+
 <section id="work" class="panel" aria-labelledby="work-title">
 <header class="titlebar"><span id="work-title">Selected work</span><button type="button" data-close aria-label="Close Selected work" hidden>×</button></header>
 <div class="sheet">
 <h2>Selected work</h2>
-<article><p class="meta">2026 · Village Roadshow Theme Parks</p><h3>Fright Nights AI image studio</h3><p>The creative team needed a reliable way to produce artwork at scale in their own style. Working with the creative director, I designed and delivered a private, end-to-end studio: a web app connected to cloud GPUs and image models, built so the team’s own judgement steers the results. I designed the batch reviewer and outcome library, made quality measurable, chose models and GPUs on cost and fit, and kept the client’s material confidential. In daily use within weeks.</p></article>
-<article><p class="meta">2026 · Personal project · TypeScript, Claude Code</p><h3>Order fulfilment pipeline</h3><p>Connects Shopify, Etsy and WooCommerce to a print-on-demand supplier. Verified webhooks feed a durable job queue with retries; every order moves through explicit states with an audit trail; duplicate orders can’t happen; orders stay as drafts until switched on; and an ops dashboard shows revenue, cost and one-click retries. 20 automated tests.</p></article>
-<article><p class="meta">2024 · QUT capstone</p><h3>WebAR heritage tour</h3><p>A browser-based augmented-reality experience, opened by QR code, for QUT’s Old Government House. I led the team using a Design Thinking process and delivered two months early. High Distinction.</p></article>
-<article><p class="meta">2011 – 2021 · Freelance</p><h3>Live show systems</h3><p>Ten years building each touring act’s live set and show rig in Ableton Live, from 100-person rooms to festival stages. The same discipline I bring to software: a technical system that has to work every time, in front of an audience.</p></article>
+
+<article class="project t-ochre"><header class="project-head"><svg><use href="#i-spark"/></svg><div><p class="meta">2026 · Village Roadshow Theme Parks</p><h3>Fright Nights AI image studio</h3></div></header>
+<p>A private studio that lets the creative team produce artwork at scale in their own style, steered by their own judgement.</p>
+<ol class="flow">
+<li><svg><use href="#i-pen"/></svg><span>Creative direction</span></li>
+<li><svg><use href="#i-browser"/></svg><span>Web studio</span></li>
+<li><svg><use href="#i-chip"/></svg><span>Cloud GPUs</span></li>
+<li><svg><use href="#i-grid"/></svg><span>Batch reviewer</span></li>
+<li><svg><use href="#i-library"/></svg><span>Outcome library</span></li>
+</ol>
+<ul class="wins"><li><svg><use href="#i-check"/></svg>Idea to daily use in weeks</li><li><svg><use href="#i-check"/></svg>Hundreds of images in days</li><li><svg><use href="#i-shield"/></svg>Client material stays private</li></ul>
+</article>
+
+<article class="project t-sky"><header class="project-head"><svg><use href="#i-box"/></svg><div><p class="meta">2026 · Personal project · TypeScript, Claude Code</p><h3>Order fulfilment pipeline</h3></div></header>
+<p>Connects online stores to a print-on-demand supplier and sends tracking back, without duplicate or lost orders.</p>
+<ol class="flow">
+<li><svg><use href="#i-store"/></svg><span>Shopify · Etsy · Woo</span></li>
+<li><svg><use href="#i-bolt"/></svg><span>Verified webhooks</span></li>
+<li><svg><use href="#i-queue"/></svg><span>Job queue + retries</span></li>
+<li><svg><use href="#i-box"/></svg><span>Print supplier</span></li>
+<li><svg><use href="#i-truck"/></svg><span>Tracking to store</span></li>
+</ol>
+<ul class="wins"><li><svg><use href="#i-check"/></svg>8 explicit order states</li><li><svg><use href="#i-check"/></svg>Full audit trail</li><li><svg><use href="#i-check"/></svg>20 automated tests</li></ul>
+</article>
+
+<article class="project t-sage"><header class="project-head"><svg><use href="#i-qr"/></svg><div><p class="meta">2024 · QUT capstone</p><h3>WebAR heritage tour</h3></div></header>
+<p>Augmented reality in the browser for a tour of QUT’s Old Government House. No app to install.</p>
+<ol class="flow">
+<li><svg><use href="#i-qr"/></svg><span>Scan a QR code</span></li>
+<li><svg><use href="#i-phone"/></svg><span>Opens in the browser</span></li>
+<li><svg><use href="#i-box"/></svg><span>AR scene on site</span></li>
+<li><svg><use href="#i-media"/></svg><span>Audio, video, photos</span></li>
+</ol>
+<ul class="wins"><li><svg><use href="#i-check"/></svg>Two months early</li><li><svg><use href="#i-check"/></svg>High Distinction</li><li><svg><use href="#i-check"/></svg>Team lead</li></ul>
+</article>
+
+<article class="project t-rose"><header class="project-head"><svg><use href="#i-wave"/></svg><div><p class="meta">2011 – 2021 · Freelance</p><h3>Live show systems</h3></div></header>
+<p>Each touring act’s live set and rig, built to work every time in front of an audience.</p>
+<ol class="flow">
+<li><svg><use href="#i-wave"/></svg><span>Artist stems</span></li>
+<li><svg><use href="#i-sliders"/></svg><span>Ableton session</span></li>
+<li><svg><use href="#i-chip"/></svg><span>Controllers + CDJs</span></li>
+<li><svg><use href="#i-speaker"/></svg><span>Venue PA</span></li>
+</ol>
+<ul class="wins"><li><svg><use href="#i-check"/></svg>10 years touring</li><li><svg><use href="#i-check"/></svg>Clubs to festival stages</li><li><svg><use href="#i-check"/></svg>No show ever stopped</li></ul>
+</article>
 </div>
 </section>
+
 <section id="contact" class="panel" aria-labelledby="contact-title">
 <header class="titlebar"><span id="contact-title">Contact</span><button type="button" data-close aria-label="Close Contact" hidden>×</button></header>
 <div class="sheet">
 <h2>Let’s connect.</h2>
-<p class="lead">Open to software, web app and AI solutions roles in Brisbane or remote, contract or permanent.</p>
-<article><h3>Email</h3><p><a href="mailto:m.you@live.com.au">m.you@live.com.au</a></p></article>
-<article><h3>LinkedIn</h3><p><a href="https://www.linkedin.com/in/mohamed-yousif-5811a0335" rel="noopener" target="_blank">linkedin.com/in/mohamed-yousif-5811a0335</a></p></article></div>
+<ul class="chips open-to"><li><svg><use href="#i-code"/></svg>Software &amp; web apps</li><li><svg><use href="#i-spark"/></svg>AI solutions</li><li><svg><use href="#i-pin"/></svg>Brisbane or remote</li><li><svg><use href="#i-clipboard"/></svg>Contract or permanent</li></ul>
+<div class="cards two">
+<a class="card link t-rose" href="mailto:m.you@live.com.au"><span class="badge-icon big"><svg><use href="#i-mail"/></svg></span><div><h3>Email</h3><p>m.you@live.com.au</p></div></a>
+<a class="card link t-sky" href="https://www.linkedin.com/in/mohamed-yousif-5811a0335" rel="noopener" target="_blank"><span class="badge-icon big"><svg><use href="#i-card"/></svg></span><div><h3>LinkedIn</h3><p>linkedin.com/in/mohamed-yousif-5811a0335</p></div></a>
+</div>
+</div>
 </section>
+
 <section id="runner" class="panel" aria-labelledby="runner-title">
 <header class="titlebar"><span id="runner-title">Paper Route</span><button type="button" data-close aria-label="Close Paper Route" hidden>×</button></header>
 <div class="sheet runner-sheet">
