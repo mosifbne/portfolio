@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Mohamed Yousif, Brisbane technology consultant and solutions developer. Experience, selected work and contact details in an interactive portfolio desktop.">
 <title>Mohamed Yousif · Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@1,125,800..900&family=Space+Mono:wght@400;700&display=swap">
 <link rel="stylesheet" href="style.css">
 <script src="site.js" defer></script>
 <script src="runner.js" defer></script>
@@ -41,18 +44,22 @@
 <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="10" r="2"/><path d="M5.5 16c.5-2 1.6-3 3-3s2.5 1 3 3M14 9h4M14 13h4"/></symbol>
 <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
 <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path class="solid" d="M12 0C12.8 7.6 16.4 11.2 24 12 16.4 12.8 12.8 16.4 12 24 11.2 16.4 7.6 12.8 0 12 7.6 11.2 11.2 7.6 12 0z"/></symbol>
+<symbol id="i-squiggle" viewBox="0 0 160 40"><path d="M4 12q6-8 12 0t12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0M4 28q6-8 12 0t12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0M20 20q30-10 60 0t60 0"/></symbol>
 <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
 </defs>
 </svg>
 <a class="skip" href="#desktop">Skip to portfolio</a>
 <header class="topbar">
-<a class="brand" href="#about" data-open="about"><span class="mark" aria-hidden="true"></span> Mohamed Yousif</a>
+<p class="topbar-blurb">Software, web apps and AI tools for creative and entertainment businesses. Built fast, built to be used, measured after launch.</p>
+<a class="brand" href="#about" data-open="about"><svg class="star" aria-hidden="true"><use href="#i-star"/></svg><span class="logo">Mohamed Yousif</span><svg class="star" aria-hidden="true"><use href="#i-star"/></svg></a>
 <div class="topbar-actions">
 <button type="button" id="close-all" hidden>Close all windows</button>
 <button type="button" class="print" hidden>Print résumé</button>
 </div>
 </header>
 <main id="desktop" class="desktop">
+<div class="sky-decor" aria-hidden="true"><span class="blob b1"></span><span class="blob b2 green"></span><span class="blob b3"></span><span class="blob b4 green"></span><span class="blob b5"></span><span class="blob b6 green"></span><span class="orb"></span></div>
 <nav class="shortcuts" aria-label="Desktop shortcuts">
 <a href="#about" data-open="about"><span class="icon profile" aria-hidden="true"></span>About me</a>
 <a href="#experience" data-open="experience"><span class="icon folder blue" aria-hidden="true"></span>Previous experience</a>
@@ -237,6 +244,9 @@
 </section>
 </div>
 </main>
-<footer class="status"><p>Brisbane, QLD · Updated November 2026</p><p class="hint" hidden>Open a section using its desktop icon.</p></footer>
+<footer class="status">
+<div class="strip" aria-hidden="true"><span class="script">portfolio</span><svg class="star"><use href="#i-star"/></svg><span class="year">2026</span><svg class="squiggle"><use href="#i-squiggle"/></svg></div>
+<div class="status-text"><p>Brisbane, QLD · Updated November 2026</p><p class="hint" hidden>Open a section using its desktop icon.</p></div>
+</footer>
 </body>
 </html>

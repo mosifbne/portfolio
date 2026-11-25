@@ -25,39 +25,39 @@
   let leaderboardLoaded = false;
 
   function paint() {
-    ctx.fillStyle = "#dbe8ee";
+    ctx.fillStyle = "#9cc4ff";
     ctx.fillRect(0, 0, 600, 200);
-    ctx.fillStyle = "#bdcfd7";
+    ctx.fillStyle = "#6f9bf0";
     for (let i = 0; i < 8; i++) {
       const x = (i * 91 + 600 - (elapsed * 20) % 600) % 600;
       ctx.fillRect(x, 70 + i % 3 * 12, 56, 87 - i % 3 * 12);
-      ctx.fillStyle = "#eff5f4";
+      ctx.fillStyle = "#eaf2ff";
       ctx.fillRect(x + 11, 93, 9, 12);
       ctx.fillRect(x + 32, 93, 9, 12);
-      ctx.fillStyle = "#bdcfd7";
+      ctx.fillStyle = "#6f9bf0";
     }
-    ctx.fillStyle = "#e8d9b9";
+    ctx.fillStyle = "#4f9d2f";
     ctx.fillRect(0, ground, 600, 43);
-    ctx.fillStyle = "#526c78";
+    ctx.fillStyle = "#1d3c9e";
     ctx.fillRect(0, ground, 600, 2);
     const y = ground - height - 26;
-    ctx.fillStyle = "#31576d";
+    ctx.fillStyle = "#1d3c9e";
     ctx.fillRect(57, y, 29, 22);
-    ctx.fillStyle = "#fff3d9";
+    ctx.fillStyle = "#ffffff";
     ctx.fillRect(61, y + 4, 21, 13);
-    ctx.strokeStyle = "#31576d";
+    ctx.strokeStyle = "#1d3c9e";
     ctx.beginPath();
     ctx.moveTo(61, y + 4);
     ctx.lineTo(71.5, y + 12);
     ctx.lineTo(82, y + 4);
     ctx.stroke();
-    ctx.fillStyle = "#31576d";
+    ctx.fillStyle = "#1d3c9e";
     ctx.fillRect(61, y + 22, 6, 4);
     ctx.fillRect(77, y + 22, 6, 4);
     for (const crate of obstacles) {
-      ctx.fillStyle = "#915d35";
+      ctx.fillStyle = "#8a9bb8";
       ctx.fillRect(crate.x, ground - crate.height, crate.width, crate.height);
-      ctx.fillStyle = "#edc68f";
+      ctx.fillStyle = "#eef3fb";
       ctx.fillRect(crate.x + 3, ground - crate.height + 3, crate.width - 6, 4);
     }
   }
